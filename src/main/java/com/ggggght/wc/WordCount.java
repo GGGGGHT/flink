@@ -11,6 +11,7 @@ import java.util.Arrays;
 /**
  * word count
  * flatMap中的参数不可以使用lambda表达式
+ * 针对离线数据集进行批处理
  */
 public class WordCount {
 	public static void main(String[] args) throws Exception {
