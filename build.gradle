@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.ggggght'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.flink/flink-java
+    implementation 'org.apache.flink:flink-java:1.10.1'
+    implementation 'org.apache.flink:flink-streaming-java_2.12:1.10.1'
+//    implementation 'org.apache.flink:flink-java:1.12.1'
+//    https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java
+//    compileOnly 'org.apache.flink:flink-streaming-java_2.12:1.12.1'
+}
+
+test {
+    useJUnitPlatform()
+}
