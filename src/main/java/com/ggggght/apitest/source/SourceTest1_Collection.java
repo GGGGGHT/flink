@@ -20,10 +20,10 @@ public class SourceTest1_Collection {
 		);
 		DataStream<SensorReading> source = env.fromCollection(list);
 
-		source.print("source");
+		source.print("source").setParallelism(1);
 
 		DataStream<Integer> integerDataStream = env.fromElements(1, 2, 3, 4, 5, 6);
-		integerDataStream.print("int");
+		integerDataStream.print("int").setParallelism(1);
 
 		env.execute("...");
 
