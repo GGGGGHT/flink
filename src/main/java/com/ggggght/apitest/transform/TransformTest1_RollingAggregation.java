@@ -6,7 +6,7 @@ import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 @SuppressWarnings("all")
-public class TransformTEst1_RollingAggregation {
+public class TransformTest1_RollingAggregation {
   public static void main(String[] args) throws Exception {
     final StreamExecutionEnvironment env =
         StreamExecutionEnvironment.getExecutionEnvironment();
